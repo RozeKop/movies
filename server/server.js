@@ -37,7 +37,7 @@ app.get("/movies", (req, res) => {
 
 app.get("/movies/:id", (req, res) => {
   res.header("Access-Control-Allow-Origin", "*");
-  res.send(movies.filter((movie) => movie.id === req.params.id));
+  res.send(movies.filter((movie) => movie.id === req.params.id)[0]);
 });
 
 app.listen(3001, function () {

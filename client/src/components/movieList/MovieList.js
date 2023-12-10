@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Movie from "../movie/Movie";
 import Pagination from "../pagination/Pagination";
 import Sort from "../sort/Sort";
-import "./movieList.css";
+import "./MovieList.css";
 
 export default function MovieList({ query }) {
   const [movies, setMovies] = useState([]);
@@ -52,7 +52,7 @@ export default function MovieList({ query }) {
   }
 
   return (
-    <>
+    <div data-testid="movie-list">
       {error && <p>Sorry there is currently an error, please return later</p>}
       {loading && <p>Loading..</p>}
       {!loading && movies.length > 0 && (
@@ -71,11 +71,11 @@ export default function MovieList({ query }) {
           />
         </div>
       )}
-      {!loading && movies.length === 0 && (
+      {!error && !loading && movies.length === 0 && (
         <div>
           <p>No movies found</p>
         </div>
       )}
-    </>
+    </div>
   );
 }

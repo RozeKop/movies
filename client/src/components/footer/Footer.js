@@ -6,7 +6,7 @@ import {
   FaLinkedin,
   FaInstagram,
 } from "react-icons/fa";
-import "./footer.css";
+import "./Footer.css";
 
 export default function Footer() {
   const email = "support@nextmovies.com";
@@ -53,7 +53,12 @@ export default function Footer() {
       </div>
       <div className="socials">
         {socials.map((social, index) => (
-          <div key={index} onClick={() => openLink(social.link)}>
+          <div
+            className="social-btn"
+            data-testid={`my-div-${index}`}
+            key={index}
+            onClick={() => openLink(social.link)}
+          >
             {social.component}
           </div>
         ))}

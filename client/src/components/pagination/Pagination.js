@@ -1,4 +1,4 @@
-import "./pagination.css";
+import "./Pagination.css";
 export default function Pagination({ page, totalPages, onPrev, onNext }) {
   return (
     <div className="pagination">

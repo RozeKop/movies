@@ -1,7 +1,7 @@
 import { useState } from "react";
 import MovieList from "../movieList/MovieList";
 import Search from "../search/Search";
-import "./mainBoard.css";
+import "./MainBoard.css";
 
 export default function MainBoard() {
   const [query, setQuery] = useState("");
@@ -12,7 +12,7 @@ export default function MainBoard() {
 
   return (
     <>
-      <div className="main-board">
+      <div className="main-board" data-testid="main-board">
         <div className="title">
           EXPLORE YOUR NEXT
           <br /> MOVIES AND TV SHOWS
