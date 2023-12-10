@@ -1,0 +1,20 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  cursor: default;
+}
+
+.pagination-btn {
+  all: initial;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 25px;
+  padding: 0px 10px;
+  line-height: 25px;
+}
+
+.pagination-btn:disabled {
+  color: #a0a0a0;
+  cursor: default;
+}

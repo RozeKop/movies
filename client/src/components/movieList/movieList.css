@@ -1,0 +1,32 @@
+.movies {
+  display: flex;
+  gap: 22px;
+  flex-direction: column;
+}
+
+.movie-grid {
+  display: grid;
+  grid-column-gap: 10px;
+  grid-row-gap: 80px;
+}
+
+@media screen and (min-width: 768px) {
+  .movie-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .movie-grid {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .movie-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+}

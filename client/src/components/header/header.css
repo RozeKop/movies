@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  padding: 1% 2%;
+}
+
+.logo {
+  width: 200px;
+  height: 70px;
+  align-self: flex-start;
+}
+
+@media screen and (max-width: 767px) {
+  .logo {
+    width: 130px;
+    height: auto;
+  }
+}

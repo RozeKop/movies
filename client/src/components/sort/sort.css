@@ -1,0 +1,30 @@
+.sort-component {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.sort-btn {
+  background-color: white;
+  color: #ffffff;
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  color: black;
+  font-weight: 700;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sort-btn.chosen {
+  background-color: #2980b9;
+}
+
+.sort-btn:hover {
+  background-color: #2980b9;
+}
