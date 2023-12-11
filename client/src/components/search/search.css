@@ -1,4 +1,6 @@
 .search-movies {
   border-radius: 20px;
   height: 30px;
+  max-width: 200px;
+  margin: auto;
 }

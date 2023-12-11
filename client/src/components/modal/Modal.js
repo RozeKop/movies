@@ -1,5 +1,5 @@
 import React from "react";
-import "./Modal.css";
+import "./modal.css";
 
 export default function Modal({ children }) {
   const handleModalClick = (e) => {

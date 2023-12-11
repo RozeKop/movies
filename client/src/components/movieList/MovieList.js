@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Movie from "../movie/Movie";
 import Pagination from "../pagination/Pagination";
 import Sort from "../sort/Sort";
-import "./MovieList.css";
+import "./movieList.css";
 
 export default function MovieList({ query }) {
   const [movies, setMovies] = useState([]);

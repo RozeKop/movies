@@ -1,5 +1,5 @@
 import star from "../../assets/star.png";
-import "./Sort.css";
+import "./sort.css";
 
 export default function Sort({ sortType, onSort }) {
   const sorts = [

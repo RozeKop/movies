@@ -1,4 +1,4 @@
-import "./Search.css";
+import "./search.css";
 export default function Search({ query, onChangeQuery }) {
   return (
     <input

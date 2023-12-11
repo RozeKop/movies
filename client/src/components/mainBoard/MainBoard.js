@@ -1,7 +1,7 @@
 import { useState } from "react";
 import MovieList from "../movieList/MovieList";
 import Search from "../search/Search";
-import "./MainBoard.css";
+import "./mainBoard.css";
 
 export default function MainBoard() {
   const [query, setQuery] = useState("");

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import Rating from "../rating/Rating";
 import Modal from "../modal/Modal";
-import "./Movie.css";
+import "./movie.css";
 import MovieCard from "./MovieCard";
 
 export default function Movie({ id }) {

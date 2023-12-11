@@ -6,7 +6,7 @@ import {
   FaLinkedin,
   FaInstagram,
 } from "react-icons/fa";
-import "./Footer.css";
+import "./footer.css";
 
 export default function Footer() {
   const email = "support@nextmovies.com";
