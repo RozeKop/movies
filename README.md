@@ -1,10 +1,21 @@
 # next-test
 
-## Installation
-1. Download the repository
-2. Install npm modules: `npm install`
-3. Start up the server: `npm start`
+# Installation
+Download the repository  
+## server
+1. Install npm modules: `npm install`
+2. Start up the server: `npm start`
 
-## Usage
-1. Get all movies: http://localhost:3000/movies
-2. get one movie by id: http://localhost:3000/movies/:id (e.g., http://localhost:3000/movies/60027713)
+## client
+1. cd client
+2. Install npm modules: `npm install`
+3. Start up the server: `npm start`  
+
+# Tests
+## server  
+Run test: `npm test`  
+
+## client
+1. cd client
+2. Run test: `npm test`
+3. `a`
