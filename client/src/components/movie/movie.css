@@ -67,6 +67,7 @@
   border: 1px solid #a0c4df;
   width: 100%;
   height: 100%;
+  aspect-ratio: 166/223;
 }
 
 .movie-details {
@@ -109,10 +110,20 @@
 
   .movie-card .movie {
     width: 100%;
+    height: 60%;
   }
 
   .read-more {
     width: auto;
     max-width: none;
+    font-size: 12px;
+  }
+
+  .movie-info {
+    font-size: 12px;
+  }
+
+  .movie-card-title {
+    font-size: 16px;
   }
 }

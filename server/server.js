@@ -3,7 +3,7 @@ const express = require("express");
 const path = require("path");
 const logger = require("morgan");
 const movies = require("./movies.json");
-const pageSize = 12;
+const { pageSize, sortMovies } = require("./movieConfig");
 
 const app = express();
 app.use(logger("dev"));
@@ -43,18 +43,5 @@ app.get("/movies/:id", (req, res) => {
 app.listen(3001, function () {
   console.log(`app listening on port ${3001}!`);
 });
-
-const sortMovies = (movies, sortBy) => {
-  return [...movies].sort((a, b) => {
-    if (sortBy === "rating") {
-      return b.rating - a.rating;
-    } else if (sortBy === "year") {
-      return b.released - a.released;
-    } else if (sortBy === "name") {
-      return a.title.localeCompare(b.title);
-    }
-    return 0;
-  });
-};
 
 module.exports = app;
